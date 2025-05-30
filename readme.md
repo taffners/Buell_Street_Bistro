@@ -40,3 +40,9 @@
 - Used for juried and professional calls
 - More setup required
 - Best if you're open to paid applications or national reach
+
+### 7. [Contact Beryl's artist list](https://www.beryl.nyc/index.php/artists/)
+Hi [Artist Name],
+I'm one of the owners of Buell Street Bistro in Brockville, Ontario — a café and dinner space that hosts monthly rotating art exhibitions. We love your work and would be thrilled to feature it in our space.
+
+If you're interested, feel free to check us out at buellstreetbistro.com and message us here or on Instagram. We'd love to learn more about your art and see if we can work together.
