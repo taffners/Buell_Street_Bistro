@@ -1,0 +1,309 @@
+      body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #dec26c;
+/*      background-color: #f4e4a1;*/
+      color: #08304d;
+    }
+    header {
+      background-color: #08304d;
+      color: #dec26c;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #c69527;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #08304d;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+    /* Container holds toggle + links */
+    .nav-container 
+    {
+      max-width: 1000px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      position: relative;
+    }
+
+
+    /* Always show the toggle */
+    .menu-toggle {
+      display: block;
+      font-size: 1.8rem;
+      margin: 0.5rem 0;
+      background: none;
+      border: none;
+      color: #08304d;
+      cursor: pointer;
+      align-self: flex-end;
+      z-index: 1001;
+    }
+
+    /* Hide menu until toggled */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #c69527;
+      padding: 1rem;
+      position: absolute;
+      top: 100%;      /* directly under toggle */
+      right: 0;       /* align right edge */
+      width: 250px;   /* adjust width as needed */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      z-index: 1000;
+    }
+
+    /* Show when open */
+    .nav-links.open {
+      display: flex;
+    }
+
+    /* Nav link styles */
+    .nav-links a {
+      margin: 0.5rem 0;
+      text-decoration: none;
+      font-weight: bold;
+      color: #08304d;
+    }
+
+    /*section > h2 
+    {
+      scroll-margin-top: 80px; /* adjust based on your nav height */
+    }
+*/
+    .icon-links {
+      margin: 0 0rem; /* nice balanced spacing */
+      color: inherit; /* ensures it matches current text color */
+      font-size: 1.25rem; /* adjust as needed */
+      display: flex;
+      gap:1rem;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .icon-links:hover {
+      color: #c69527; /* or whatever hover color you prefer */
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      scroll-margin-top: 100px; /* ADD THIS */
+    }
+
+    h2 {
+      font-weight: bold;
+      color: #08304d;
+      font-size: 1.7rem;
+    }
+    .logo {
+      max-width: 200px;
+      margin: 1rem auto;
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #08304d;
+      color: #dec26c;
+    }
+    ul {
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .menu-category {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #08304d;
+      font-size: 1.5rem;
+    }
+    .menu-item-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #08304d; /* Optional: matches your category heading */
+    }
+    .menu-description {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    .hours, .menu-transition-banner {
+      background-color: #08304d;
+      color: #dec26c;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    .hours h2, .menu-transition-banner h2 {
+      margin-top: 0;
+      color: #dec26c;
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+    
+    .fancy-divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .fancy-divider::before,
+    .fancy-divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #4b6043;
+    }
+
+    .fancy-divider span {
+      margin: 0 1rem;
+      font-size: 1.5rem;
+      color: #4b6043;
+    }
+    .social-links a {
+      margin-right: 16px;
+      color: #4b6043; /* or #000, or white, etc */
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #888;
+    }
+
+
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 2px 6px;
+      margin-left: 6px;
+      border-radius: 4px;
+      color: #fff;
+      background-color: #4b6043; /* or different colors for each */
+      font-family: Arial, sans-serif;
+    }
+
+    .gf {
+      background-color: #007b83;
+    }
+
+    .v, .ve {
+      background-color: #6c9a2b;
+    }
+
+    .nuts, .shellfish {
+      background-color: #b02e0c; /* dark red/orange for visibility */
+      color: #fff;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .footer-links a {
+      color: #dec26c; /* match your footer text color */
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-links a i {
+      margin-right: 6px;
+      font-size: 1.1rem;
+    }
+
+    .footer-links a:hover {
+      color: #c69527;
+    }
+    footer a[href^="tel:"], .hours a[href^="tel:"] {
+      color: #dec26c; /* match your footer text color */
+      font-weight: bold;
+      text-decoration: none; /* remove underline if unwanted */
+    }
+
+    footer a[href^="tel:"]:hover, .class a[href^="tel:"]:hover {
+      text-decoration: underline; /* or use a subtle hover color if preferred */
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+
+/* Photos gallery   */
+    .gallery {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .gallery h2 {
+      font-size: 1.7rem;
+      color: #08304d;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .image-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      display: block;
+    }
+     .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      gap: 0.5rem;
+    }
+    .pagination a {
+      background-color: #08304d;
+      color: #dec26c;
+      padding: 0.5rem 0.75rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .pagination a:hover {
+      background-color: #c69527;
+      color: #08304d;
+    }
